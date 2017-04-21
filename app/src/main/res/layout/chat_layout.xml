@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!-- TODO style themes to make code -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorTextBlue"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <TextView
+
+                android:id="@+id/text_view_lead_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="leadname"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Key_post_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|bottom"
+                android:paddingRight="@dimen/chat_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="Posted 30min ago"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/chat_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/title"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/text_view_title_chatlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/chat_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/title_chat_detail"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight=".75">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/chat_margin"
+                    android:paddingLeft="@dimen/chat_margin"
+                    android:paddingRight="@dimen/chat_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/description"
+                    android:textColor="@color/colorTextBlueLight" />
+
+                <TextView
+                    android:id="@+id/text_view_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_description_heading"
+                    android:paddingBottom="@dimen/chat_margin"
+                    android:paddingLeft="@dimen/chat_margin"
+                    android:paddingRight="@dimen/chat_margin"
+                    android:text="@string/place_holder_text"
+                    android:textColor="@color/colorMaterialGray700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_attachment_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_description"
+                    android:paddingBottom="@dimen/chat_margin"
+                    android:paddingLeft="@dimen/chat_margin"
+                    android:paddingRight="@dimen/chat_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/attachment"
+                    android:textColor="@color/colorTextBlueLight" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_attachment_heading"
+                    android:layout_marginLeft="@dimen/chat_margin"
+                    android:layout_marginRight="@dimen/chat_margin"
+                    android:background="@color/colorGray"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/chat_margin"
+                        android:src="@drawable/ic_image_white_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/text_view_file_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="fill_vertical"
+                        android:text="@string/file_name"
+                        android:textColor="@color/colorGrayDarkText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_file_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:text="@string/file_size"
+                        android:textSize="@dimen/text_size_10sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/image_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_get_app_white_24dp"
+                        android:tint="@color/colorYellow" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/id_not_intrested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/chat_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:background="@drawable/magnitude_not_intrested"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/not_intrested"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/id_message_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/chat_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:background="@drawable/magnitude_message_now"
+                    android:backgroundTint="@color/colorYellow"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="@string/message_now"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

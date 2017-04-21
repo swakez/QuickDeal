@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="chat_margin">8dp</dimen>
+    <dimen name="linear_padding">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="paddingTopToolbar">64dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="text_size_shop_name">16sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_num_msg">8sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_last_msg">12sp</dimen>
+</resources>
