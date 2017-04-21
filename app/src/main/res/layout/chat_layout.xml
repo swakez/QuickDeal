@@ -166,6 +166,8 @@
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:scaleX="1.2"
+                        android:scaleY="1.2"
                         android:id="@+id/image_download"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
