@@ -1,0 +1,1 @@
+Verbose tech assignment
